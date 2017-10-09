@@ -11,6 +11,7 @@ function createTable() {
     for (let i = 0; i < jsonData.values.length; i++) {
       $('#table-aliens').find('tbody').append(`
         <tr>
+           <td>${jsonData.values[i].followers}</td>
            <td><img src='${jsonData.values[i].avatar_url}' width="50" height="50" /></td>
            <td>${jsonData.values[i].name}</td>
            <td>
@@ -19,7 +20,7 @@ function createTable() {
             </a>
            </td>
            <td>${jsonData.values[i].location}</td>
-           <td>${jsonData.values[i].followers}</td>
+           <td>${jsonData.values[i].bio}</td>
         </tr>
         `);
     }
