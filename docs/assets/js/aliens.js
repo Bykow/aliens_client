@@ -2,7 +2,7 @@ function createTable() {
   $.getJSON('data/hireableUsers.json', (jsonData) => {
     $('#header-aliens').append(`
           <p class="category"> They have more than ${jsonData.info.followers} followers
-           and more than ${jsonData.info.repo} repos on GitHub !</p>
+           and more than ${jsonData.info.repo} repos while being "hireable" on GitHub !</p>
         `);
 
     // Sorting the devs by number of followers
